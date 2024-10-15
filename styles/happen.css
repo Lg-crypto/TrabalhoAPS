@@ -16,7 +16,9 @@ html{
     .box{
         width: 600px;
         height: 86vh;
-        padding: 50px;
+        padding: 100px;
+        padding-left: 100px;
+        padding-right: 200px;
         background: #eb4c48;
         position: relative;
         top: 10vh;
@@ -24,8 +26,35 @@ html{
         display: flex;
     }
     .text{
+        width: 400px;
         padding: 50px;
+        padding-top: 50px;
         background: #fff;
-        font-family: Montserrat;
+        font-family: Montserrat,sans-serif;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 50px 50px #b61814;
+    }
+    .text h2{
+        width: max-content;
+        color: #fff;
+        border-radius: 10px;
+        font-family: Bebas,sans-serif;
+        background: #b61814;
+        padding: 10px;
+        position: absolute;
+        top: -25px;
+        left: -25px;
+    }
+    .text p{
+        line-height: 1.8;
+        color: #b61814;
+        font-weight: 500;
+    }
+    .image img{
+        transform: scale(7);
+        position: absolute;
+        right: -50px;
+        top: 250px;
     }
 }
