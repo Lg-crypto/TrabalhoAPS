@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Bebas;
+    src: url(../assets/Fonts/BebasNeue/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+html{
+    overflow: hidden;
+}
+#container{
+    min-height: 83vh;
+    text-align: justify;
+    .box{
+        width: 600px;
+        height: 86vh;
+        padding: 50px;
+        background: #eb4c48;
+        position: relative;
+        top: 10vh;
+        left: 5vw;
+        display: flex;
+    }
+    .text{
+        padding: 50px;
+        background: #fff;
+        font-family: Montserrat;
+    }
+}
