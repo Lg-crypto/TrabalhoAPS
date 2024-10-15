@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Bebas;
+    src: url(../assets/Fonts/BebasNeue/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+html{
+    overflow: hidden;
+}
+#container{
+    position: absolute;
+    left: 0px;
+    min-height: 72vh;
+    
+    .box-container{
+        width: 100vw;
+        height: 70vh;
+        background: #ffcacf;
+        display: flex;
+        position: absolute;
+        left: 0px;
+    }
+    .box{
+        position: relative;
+        padding: 30px;
+        height: min-content;
+    }
+    .box p{
+        font-family: Montserrat;
+        font-size: 0.8em;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .box h2 {
+        font-size: 32px;
+        font-family: Bebas;
+        margin-bottom: 30px;
+    }
+    .box#box1{
+        width: 300px;
+        top: 5vh;
+        left: 10vw;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: -50px 30px #f3aeb1;
+    }
+    .box#box2{
+        width: 300px;
+        background: #fd5652;
+        top: 10vh;
+        left: 20vw;
+        color: #fff;
+        box-shadow: 30px -20px #b61814;
+    }
+    .box-container img{
+        position: absolute;
+        bottom: 50px;
+        left: 20vw;
+        transform: scale(5);
+    }
+}

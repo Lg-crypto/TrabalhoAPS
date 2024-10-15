@@ -1,0 +1,123 @@
+*{
+    transition: 0.3s ease;
+}
+html{
+    overflow: hidden;
+}
+.box{
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    column-gap: 0.5%;
+}
+.column{
+    padding: 0 50px;
+    h3{
+        font-family: Bebas;
+        font-size: 30px;
+        margin: 25px 0;
+    }
+    p, label{
+        font-family: Montserrat;
+        font-size: 0.7em;
+        text-align: justify;
+    }
+}
+#column1{
+    background-color: #b61814;
+    h3{
+        color: #fff;
+    }
+    p{
+        color: #fff;
+    }
+    .cards{
+        display: grid;
+        gap: 5px;    
+    }
+    .card{
+        padding: 5px 10px;
+        background-color: #fff;
+        justify-content: space-between;
+        display: flex;
+        border-radius: 15px;
+        position: relative;
+    }
+    .card p{
+        color: #000;
+    }
+    .card label{
+        padding: 2px 5px;
+        color: #fff;
+        background-color: #b61814;
+        border-radius: 15px;
+        position: absolute;
+        top: 3px;
+        right: 5px;
+    }   
+}
+#column2{
+    display: grid;
+    h3{
+        color: #fd5652;
+    }
+    .text-container{
+        display: grid;
+        padding: 20px;
+        border: 1px solid #fd5652;
+        border-radius: 10px;
+        gap: 0.7em;
+        color: #fd5652;
+        font-weight: 600;
+        box-shadow: #e9eaea 20px 20px;
+    }
+    .teacher-images{
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        gap: 5px;
+    }
+    .teacher-images img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .teacher-images img:hover{
+        transform: scale(1.2);
+    }
+    .teacher-images img:not(:hover){
+        transform: scale(1);
+    }
+}
+
+#column3{
+    background-color: #ffcacf;
+    .line{
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;      
+    }
+    h3{
+        color: #b61814;
+        width: max-content;
+    }
+    h4{
+        font-size: 20px;
+        font-family: Bebas;
+        color: #b61814;
+        width: max-content;
+        text-decoration: underline dotted #b61814;
+    }
+    .element{
+        padding: 20px;
+        background-color: #fff;
+        color: #b61814;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        box-shadow: 20px 20px #f3aeb1;
+    }
+    .element h5{
+        font-family: Bebas;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}

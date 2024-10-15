@@ -1,0 +1,103 @@
+
+@font-face {
+    font-family: Bebas;
+    src: url(../assets/Fonts/BebasNeue/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+*{
+    --titles-font-size: 30px;
+}
+main{
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+#container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.content{
+    margin: 30px;
+}
+.content#first-col .box-container .box {
+    margin-top: 50px;
+    max-height: 500px;
+    padding: 50px 50px;
+    background-color: #b61814;
+    position: relative;
+}
+.content#first-col .box-container .box .title-box{
+    font-family: Bebas;
+    width: min-content;
+    color: #b61814;
+    background-color: #f3aeb1;
+    font-size: var(--titles-font-size);
+    padding: 10px 30px;
+    border-radius: 50px;
+    position: absolute;
+    top: -60px;
+}
+.content#first-col .box-container .box .text-box{
+    display: grid;
+    row-gap: 15px;
+}
+.content#first-col .box-container .box p{
+    color: white;
+    text-align: justify;
+    font-size: 1em;
+}
+section.content#second-col .box-container{
+    position: relative;
+}
+section.content#second-col .box-container .box .content-box{
+    height: 60vh;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: 50% 45%;
+    row-gap: 10%;
+    column-gap: 20px;
+    background: #ffcacf;
+    padding-bottom: 200px;
+    box-shadow: 50px 50px #b61814;
+    h2,h3{
+        color: #b61814;
+        font-family: Bebas;
+    }
+    h2{
+        width: max-content;
+        height: max-content;
+        font-size: 40px;
+        border-bottom: 5px dotted ;
+    }
+    .info-box{
+        height: max-content;
+        text-align: justify;
+    }
+    .info-box h3{
+        background: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 5px -5px #f3aeb1;
+        margin: 10px 0px
+    }
+    .info-box p{
+        font-size: 3vh;
+    }
+    .img-box{
+        width: max-content;
+        height: max-content;
+        display: inline;
+    }
+    .img-box img{
+        width: 60px;
+        height: 60px;
+        margin: 0 40px;
+    }
+}

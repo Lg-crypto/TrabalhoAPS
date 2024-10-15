@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Bebas;
+    src: url(../assets/Fonts/BebasNeue/BebasNeue-Regular.ttf);
+}
+html{
+    overflow: hidden;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    min-height: 86vh;
+}
+
+.column{
+    display: grid;
+    grid-template-rows: repeat(2,50%);
+    padding: 30px;
+}
+
+#container #column1{
+    background: #ffcacf;
+}
+#container .column .element{
+    margin: 5px;
+}
+#container .column h2{
+    width: max-content;
+    height: max-content;
+    font-size: 26px;
+    font-family: Bebas; 
+    padding: 5px 20px;
+    padding-right: 60px;
+    background: #b61814;
+    border-radius: 30px;
+    color: #fff;
+    box-shadow: 10px 10px #95191e;
+}
+#container .column .element h3{
+    width: max-content;
+    font-size: 26px;
+    font-family: Bebas; 
+    letter-spacing: 0.05em;
+    padding: 5px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 10px 10px #f3aeb1;
+    margin-bottom: 15px;
+}
+#container .column#column3 .element h3{
+    color: #95191e;
+    background-color: #ffcacf;
+}
+#container .column .element p{
+    text-align: justify;
+    font-size: 1em;
+}
+#container #column2 {
+    justify-content: center;
+    *{
+        position: relative;
+        left: 25px;
+    }
+}
+#container .column #image{
+    width: 300px;
+    position: relative;
+    top: -100px;
+}
+
+@media (height < 513px) {
+    #container .column .element p{
+        text-align: justify;
+        font-size: 0.9em;
+    }
+}

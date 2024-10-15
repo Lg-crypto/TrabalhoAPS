@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Bebas;
+    src: url(../assets/Fonts/BebasNeue/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.3s ease;
+}
+
+html::-webkit-scrollbar{
+    width: 50px;
+}
+html::-webkit-scrollbar-track{
+    background: #fd5652;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border: 20px solid #fd5652;
+    border-radius: 25px;
+}
+html{
+    overflow-x: hidden;
+}
+main{
+    font-family: 'Open sans',sans-serif;
+}
+header {
+    min-height: 10dvh;
+    padding: 10px;
+    z-index: 999;
+    padding-left: 30px;
+    background-color: #fd5652;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    top: 0px;
+}
+
+img{
+    width: 50px;
+}
+nav{
+    margin: 20px;
+    margin-right: 50px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 600px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li img{
+    width: 30px;
+}
+a:hover{
+    transform: scale(1.05);
+}
+
+dialog{
+    outline: none;
+    min-width: 500px;
+    min-height: 300px;
+}
+
+@media (width < 720px) {
+    html::-webkit-scrollbar{
+        width: 10px;
+    }
+    html::-webkit-scrollbar-track{
+        background: #fd5652;
+    }
+    html::-webkit-scrollbar-thumb{
+        background: #fff;
+        border: 3px solid #fd5652;
+        border-radius: 10px;
+    }
+}
