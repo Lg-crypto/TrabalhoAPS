@@ -29,7 +29,7 @@ html{
     align-items: center;
 }
 #container .box-container .box-content .texts{
-    z-index: 999;
+    z-index: 997;
     width: max-content;
     position: absolute;
     top: 40vh;
@@ -122,14 +122,4 @@ html{
     position: absolute;
     left: 100px;
     top: 150px;
-}
-#popup{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    user-select: none;
-    .star:hover, .star.active{
-        cursor: pointer;
-        color: #fcad05;
-    }
 }

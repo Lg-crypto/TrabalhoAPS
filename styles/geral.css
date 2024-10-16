@@ -60,23 +60,101 @@ ul {
     justify-content: space-around;
     min-width: 600px;
 }
-
+li label{
+    height: min-content;
+}
 a{
     text-decoration: none;
     color: #fff;
 }
 
-ul li img{
-    width: 30px;
-}
-a:hover{
-    transform: scale(1.05);
+ul li label{
+    color: #fff;
+    font-size: 30px;
 }
 
-dialog{
+ul li label:hover{
+    color: #fcad05;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+#popup{
+    border: none;
+    background: transparent;
+    z-index: 998;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    user-select: none;
+    .star:hover, .star.active{
+        cursor: pointer;
+        color: #fcad05;
+    }
+}
+.popup{
+    z-index: 999;
     outline: none;
-    min-width: 500px;
-    min-height: 300px;
+    width: 400px;
+    min-height: 200px;
+    border: none;
+    background: #b61814;
+    border-radius: 5px;
+    color: #fff;
+    display: grid;
+    h2{
+        font-size: 14px;
+    }
+    .stars{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: #eb4c48;
+        font-size: 32px;
+        max-height: 50px;
+    }
+    .line{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    button#send-btn{
+        width: max-content;
+        height: max-content;
+        padding: 5px 50px;
+        position: absolute;
+        top: -20px;
+        border: 1px solid #fff;
+        outline: none;
+        border-radius: 50px;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+    .x{
+        position: relative;
+    }
+    .close{
+        background: transparent;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        transition: 0.1s ease;
+    }
+    button:hover{
+        transform: scale(1.2);
+    }
+
 }
 
 @media (width < 720px) {

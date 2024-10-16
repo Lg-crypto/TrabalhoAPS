@@ -24,6 +24,7 @@ html{
         top: 10vh;
         left: 5vw;
         display: flex;
+        border-radius: 20px;
     }
     .text{
         width: 400px;
