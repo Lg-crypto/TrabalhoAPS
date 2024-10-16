@@ -66,12 +66,12 @@
                 </div>
             </dialog>
             <section class="box-container">
-                <form action="post">
+                <form action="/pages/contact.html">
                     <div class="box" id="box1">
                         <h2>dúvidas ou sugestão a fazer?</h2>
                         <h2 id="scnd">fale conosco:</h2>
                         <div class="mini-box">
-                            <textarea name="msg" id="msg" cols="30" rows="5"></textarea>
+                            <textarea name="msg" id="msg" cols="40" rows="7" required></textarea>
                             <button type="submit">Enviar</button>
                         </div>
                     </div>
@@ -79,16 +79,17 @@
                         <label>
                             Nome (obrigatório)
                         </label>
-                        <input type="text" id="name">
+                        <input type="text" id="name" required>
                         <label>
                             E-mail de contato (obrigatório)
                         </label>
-                        <input type="email" name="" id="">
+                        <input type="email" name="email" id="email" required>
                     </div>
                 </form>
             </section>
         </section>
     </main>
     <script src="../scripts/geral.js"></script>
+    <script src="../scripts/contact.js"></script>
 </body>
 </html>
