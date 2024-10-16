@@ -59,8 +59,7 @@ section.content#second-col .box-container .box .content-box{
     height: 60vh;
     padding: 30px;
     display: grid;
-    grid-template-rows: max-content;
-    grid-template-columns: 50% 45%;
+    grid-template-areas: "first first""info info""info info ";
     row-gap: 10%;
     column-gap: 20px;
     background: #ffcacf;
@@ -76,28 +75,48 @@ section.content#second-col .box-container .box .content-box{
         font-size: 40px;
         border-bottom: 5px dotted ;
     }
-    .info-box{
-        height: max-content;
-        text-align: justify;
+    .infos{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        gap: 50px;
+        row-gap: 100px;
     }
-    .info-box h3{
+    .info-box{
+        height: 20px;
+        text-align: justify;
         background: #fff;
-        padding: 10px;
+        padding: 30px;
         border-radius: 10px;
         box-shadow: 5px -5px #f3aeb1;
-        margin: 10px 0px
+        margin: 10px 0px;
+        position: relative;
+        padding-left: 50px;
+        color: #4a3222;
+        font-family: Bebas;
+        font-size: 20px;
+        font-weight: 600;
     }
-    .info-box p{
-        font-size: 3vh;
+    .info-box::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%,-50%);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #4a3222; 
+    }
+    .first-line{
+        grid-area: first;
+        display: flex;
+        justify-content: space-between;
     }
     .img-box{
-        width: max-content;
-        height: max-content;
-        display: inline;
+        transform: translate(-100%,0%);
     }
     .img-box img{
         width: 60px;
         height: 60px;
-        margin: 0 40px;
     }
 }

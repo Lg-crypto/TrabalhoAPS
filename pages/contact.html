@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contate-nos</title>
+    <link rel="stylesheet" href="../styles/geral.css">
+    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
     <main>
         <header>
             <div id="icon">
-                <img src="./assets/icon.png" alt="Icon">
+                <img src="../assets/icon.png" alt="Icon">
             </div>
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Inicio</a>
+                        <a href="../index.html">Inicio</a>
                     </li>
                     <li>
-                        <a href="./pages/about.html">Sobre</a>
+                        <a href="./about.html">Sobre</a>
                     </li>
                     <li>
-                        <a href="./pages/solution.html">Solução</a>
+                        <a href="./solution.html">Solução</a>
                     </li>
                     <li>
-                        <a href="./pages/project.html">Projeto</a>
+                        <a href="./project.html">Projeto</a>
                     </li>
                     <li>
-                        <a href="./pages/law.html">Lei</a>
+                        <a href="./law.html">Lei</a>
                     </li>
                     <li>
-                        <a href="./pages/happen.html">Acontece na ETEC</a>
+                        <a href="./happen.html">ETEC em ação</a>
                     </li>
                     <li>
-                        <a href="./pages/contact.html">Contatos</a>
+                        <a href="./contact.html">Contatos</a>
                     </li>
                     <li>
                         <label id="star-btn">
@@ -64,9 +66,29 @@
                 </div>
             </dialog>
             <section class="box-container">
-                
+                <form action="post">
+                    <div class="box" id="box1">
+                        <h2>dúvidas ou sugestão a fazer?</h2>
+                        <h2 id="scnd">fale conosco:</h2>
+                        <div class="mini-box">
+                            <textarea name="msg" id="msg" cols="30" rows="5"></textarea>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="box" id="box2">
+                        <label>
+                            Nome (obrigatório)
+                        </label>
+                        <input type="text" id="name">
+                        <label>
+                            E-mail de contato (obrigatório)
+                        </label>
+                        <input type="email" name="" id="">
+                    </div>
+                </form>
             </section>
         </section>
     </main>
+    <script src="../scripts/geral.js"></script>
 </body>
 </html>

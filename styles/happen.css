@@ -35,6 +35,8 @@ html{
         position: relative;
         border-radius: 20px;
         box-shadow: 50px 50px #b61814;
+        position: relative;
+        top: -50px;
     }
     .text h2{
         width: max-content;
@@ -49,7 +51,7 @@ html{
         left: -25px;
     }
     .text p{
-        line-height: 1.8;
+        line-height: 1.5;
         color: #b61814;
         font-weight: 500;
     }

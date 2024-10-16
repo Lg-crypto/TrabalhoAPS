@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Bebas;
+    src: url(../assets/Fonts/BebasNeue/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+html{
+    overflow: hidden;
+}
+#container{
+    min-height: 84vh;
+    .box-container{
+        width: 80vw;
+        height: 130vh;
+        position: absolute;
+        left: -300px;
+        top: 0px;
+        background: #ffcacf;
+        rotate: -10deg;
+        box-shadow: 150px 350px #f3aeb1;
+    }
+    form{
+        min-width: max-content;
+        min-height: max-content;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+        rotate: 10deg;
+    }
+    h2{
+        font-family: Bebas;
+        font-size: 30px;
+    }
+}
