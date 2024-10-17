@@ -1,43 +1,68 @@
 const container = document.querySelector('.teacher-images');
-const images = document.querySelectorAll('.image-btn');
+const buttons = document.querySelectorAll('.image-btn');
 
-const info = [
-    {
-        name:"Fernanda",
-        age:0,
-        formations:["a"],
-        image:"../assets/Professores/fernanda.jpg"
+const professores = [
+    {   
+        img: '../assets/professores/fernanda.jpg',
+        name:'Fernanda Hellen de Souza',
+        formations: 'Analista de Sistemas',
+        discipline: 'Analise e Projetos de Sistemas'
     },
     {
-        name:"",
-        age:0,
-        formations:[]
+        img:'../assets/professores/celia.jpg',
+        name:'Celia Aparecida Barufaldi',
+        formations:'Tecnologia em Processamento de Dados',
+        discipline:'Programação WEB I'
     },
     {
-        name:"",
-        age:0,
-        formations:[]
+        img:'../assets/professores/samuel.jpg',
+        name:'Samuel dos Santos',
+        formations:'Tecnologia em Processamento de Dados',
+        discipline:'Programação WEB I'
     },
     {
-        name:"",
-        age:0,
-        formations:[]
+        img: '../assets/professores/priscila.jpg',
+        name: 'Priscila Batista Martins',
+        formations: 'Análise de sistema;<br>Pedagogia: Especialista em informática e Educação',
+        discipline: 'Banco de dados'
     }
 ]
 
-const create = ()=>{
-    info.forEach((teacher, index)=>{
+buttons.forEach((btn,i)=>{
+    btn.addEventListener('click',e =>{
         container.innerHTML += `
-        <div class="teacher-info teacher${index+1}">
-            <div class="first-line">
-                <img src="${teacher.image}">
+        <dialog class="teacher-popup" style="display:flex">
+            <button id="x">x</button>
+            <img src="${professores[i].img}" alt="${professores[i].name}"/>
+            <h3>
+                ${professores[i].name}
+            </h3>
+            <div class="card">
+                <label class="label">
+                    Matéria
+                </label>
+                <p>
+                    ${professores[i].discipline}
+                </p>
             </div>
-            <div class="second-line">
-                <h6>${teacher.name}</h6>
+            <div class="card">
+                <label class="label">
+                    Formação
+                </label>
+                <p>
+                    ${professores[i].formations}
+                </p>
             </div>
-        </div>
+        <dialog>
         `;
+        const popup = document.querySelector('.teacher-popup');
+        const x = document.getElementById('x');
+        x.addEventListener('click',()=>{
+            popup.style.display ='none'
+            popup.close();
+        })
+        popup.style.display = 'flex'
+        popup.showModal()
     })
-}
+})
 
-console.log('Ainda faltam corrigir algumas coisas ');
