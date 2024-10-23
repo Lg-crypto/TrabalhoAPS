@@ -3,25 +3,25 @@ const buttons = document.querySelectorAll('.image-btn');
 
 const professores = [
     {   
-        img: '../assets/professores/fernanda.jpg',
+        img: '../assets/Professores/fernanda.jpg',
         name:'Fernanda Hellen de Souza',
         formations: 'Analista de Sistemas',
         discipline: 'Analise e Projetos de Sistemas'
     },
     {
-        img:'../assets/professores/celia.jpg',
+        img:'../assets/Professores/celia.jpg',
         name:'Celia Aparecida Barufaldi',
         formations:'Tecnologia em Processamento de Dados',
         discipline:'Programação WEB I'
     },
     {
-        img:'../assets/professores/samuel.jpg',
+        img:'../assets/Professores/samuel.jpg',
         name:'Samuel dos Santos',
         formations:'Tecnologia em Processamento de Dados',
         discipline:'Programação WEB I'
     },
     {
-        img: '../assets/professores/priscila.jpg',
+        img: '../assets/Professores/priscila.jpg',
         name: 'Priscila Batista Martins',
         formations: 'Análise de sistema;<br>Pedagogia: Especialista em informática e Educação',
         discipline: 'Banco de dados'
