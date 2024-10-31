@@ -28,7 +28,6 @@ const professores = [
     }
 ];
 
-<<<<<<< HEAD
 buttons.forEach((btn, i) => {
     function criarPopup() {
         const dialog = document.createElement('dialog');
@@ -61,43 +60,3 @@ buttons.forEach((btn, i) => {
         criarPopup();
     });
 });
-=======
-buttons.forEach((btn,i)=>{
-    btn.addEventListener('click',e =>{
-        container.innerHTML += `
-        <dialog class="teacher-popup" style="display:flex">
-            <button id="x">x</button>
-            <img src="${professores[i].img}" alt="${professores[i].name}"/>
-            <h3>
-                ${professores[i].name}
-            </h3>
-            <div class="card">
-                <label class="label">
-                    Matéria
-                </label>
-                <p>
-                    ${professores[i].discipline}
-                </p>
-            </div>
-            <div class="card">
-                <label class="label">
-                    Formação
-                </label>
-                <p>
-                    ${professores[i].formations}
-                </p>
-            </div>
-        <dialog>
-        `;
-        const popup = document.querySelector('.teacher-popup');
-        const x = document.getElementById('x');
-        x.addEventListener('click',()=>{
-            popup.style.display ='none'
-            popup.close();
-        })
-        popup.style.display = 'flex'
-        popup.showModal()
-    })
-})
-
->>>>>>> 5273b1a1b3cd8e8cfb1f58dc696ef44aad3aa9b7
