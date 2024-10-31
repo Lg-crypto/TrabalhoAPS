@@ -21,42 +21,24 @@ const professores = [
         discipline:'Programação WEB I'
     },
     {
-        img: '../assets/Professores/priscila.jpg',
-        name: 'Priscila Batista Martins',
-        formations: 'Análise de sistema;<br>Pedagogia: Especialista em informática e Educação',
-        discipline: 'Banco de dados'
+        name:"",
+        age:0,
+        formations:[]
     }
-];
+]
 
-buttons.forEach((btn, i) => {
-    function criarPopup() {
-        const dialog = document.createElement('dialog');
-        dialog.classList.add('teacher-popup');
-        dialog.innerHTML = `
-            <button id="x">x</button>
-            <img src="${professores[i].img}" alt="${professores[i].name}"/>
-            <h3>${professores[i].name}</h3>
-            <div class="card">
-                <label class="label">Matéria</label>
-                <p>${professores[i].discipline}</p>
+const create = ()=>{
+    info.forEach((teacher, index)=>{
+        container.innerHTML += `
+        <div class="teacher-info teacher${index+1}">
+            <div class="first-line">
+                <img src="${teacher.image}">
             </div>
-            <div class="card">
-                <label class="label">Formação</label>
-                <p>${professores[i].formations}</p>
+            <div class="second-line">
+                <h6>${teacher.name}</h6>
             </div>
+        </div>
         `;
-        
-        container.appendChild(dialog);
-        dialog.showModal();
-
-        const x = dialog.querySelector('#x');
-        x.addEventListener('click', () => {
-            dialog.close();
-            dialog.remove(); // Remove o popup do DOM após fechar
-        });
-    }
-
-    btn.addEventListener('click', () => {
-        criarPopup();
-    });
-});
+    })
+}
+create()
