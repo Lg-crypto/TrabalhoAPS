@@ -67,7 +67,9 @@ a{
     text-decoration: none;
     color: #fff;
 }
-
+.here{
+    color: #b61814;
+}
 ul li label{
     color: #fff;
     font-size: 30px;
@@ -106,8 +108,9 @@ a:hover{
     border-radius: 5px;
     color: #fff;
     display: grid;
-    h2{
+    .line h2{
         font-size: 14px;
+        color: #fff;
     }
     .stars{
         display: flex;

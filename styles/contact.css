@@ -31,7 +31,7 @@ html{
         rotate: 10deg;
         justify-content: space-between;
     }
-    h2{
+    h2#first{
         font-family: Bebas;
         font-size: 30px;
         color: #b61814;

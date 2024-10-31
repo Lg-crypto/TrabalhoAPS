@@ -58,9 +58,7 @@ section.content#second-col .box-container{
 section.content#second-col .box-container .box .content-box{
     height: 60vh;
     padding: 30px;
-    display: grid;
-    grid-template-areas: "first first""info info""info info ";
-    row-gap: 10%;
+    flex-direction: column;
     column-gap: 20px;
     background: #ffcacf;
     padding-bottom: 200px;
@@ -75,48 +73,57 @@ section.content#second-col .box-container .box .content-box{
         font-size: 40px;
         border-bottom: 5px dotted ;
     }
-    .infos{
-        display: grid;
-        grid-template-columns: repeat(2,50%);
-        gap: 50px;
-        row-gap: 100px;
-    }
-    .info-box{
-        height: 20px;
-        text-align: justify;
-        background: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 5px -5px #f3aeb1;
-        margin: 10px 0px;
-        position: relative;
-        padding-left: 50px;
-        color: #4a3222;
-        font-family: Bebas;
-        font-size: 20px;
-        font-weight: 600;
-    }
-    .info-box::before{
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translate(-50%,-50%);
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: #4a3222; 
+    .first-line a {
+        display: flex;
+        width: min-content;
     }
     .first-line{
-        grid-area: first;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    .mini-title{
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: #b61814;
+        padding: 10px;
+        font-family: Bebas, sans-serif;
+        font-size: 20px;
+        color: #fff;
     }
     .img-box{
-        transform: translate(-100%,0%);
+        width: min-content;
     }
     .img-box img{
         width: 60px;
         height: 60px;
     }
+
+    .info-boxs{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,48%);
+        gap: 4%;
+        row-gap: 10%;
+    }
+    .info{
+        box-sizing: border-box;
+        color: #000;
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: Bebas;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 10px;
+        box-shadow: 10px -10px #00000011;
+    }
+    .text{
+        text-align: justify;
+    }
+
 }
